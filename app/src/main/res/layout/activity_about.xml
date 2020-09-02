@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3a1570"
+    tools:context=".About">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:text="ABOUT"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tim"
+        android:text="Tim Rema"
+        android:layout_below="@id/about"
+        android:textSize="24sp"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/tim"
+        android:id="@+id/gambar"
+        android:src="@drawable/aboutsatu"
+        android:layout_margin="30dp"/>
+    <LinearLayout
+        android:layout_below="@id/gambar"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambar"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:layout_marginTop="20dp"
+            android:text="Anggota Tim"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambar"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:text="Andini Widjaja Kusuma"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambar"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:text="Nur Aini Marati"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambar"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:text="Dira Sabrina Ramadhani"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambar"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:layout_marginTop="20dp"
+            android:text="Dosen Pembimbing"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambar"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:text="Okkie Puspitorini, ST, MT"/>
+    </LinearLayout>
+</RelativeLayout>

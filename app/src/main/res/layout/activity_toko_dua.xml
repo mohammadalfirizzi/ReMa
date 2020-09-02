@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TokoDua">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uri"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kode"
+        android:text="kode"/>
+    <TextView
+        android:layout_below="@id/kode2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_user"
+        android:text="id_user"/>
+    <TextView
+        android:layout_below="@id/id_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_pembayaran"
+        android:text="id_pembayaran"/>
+
+    <TextView
+        android:layout_below="@+id/kode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kode2"
+        android:text="kode"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texttt"
+        android:text="Selesaikan Pembayaran"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/id_pembayaran"
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardMaxElevation="5dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECEFF1">
+
+            <ImageView
+                android:id="@+id/VolleyImageView"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/VolleyImageView"
+                android:layout_toEndOf="@+id/VolleyImageView"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="JSon Image Name"
+                android:id="@+id/ImageNameTextView"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+
+                android:layout_marginLeft="200dp"
+                android:id="@+id/uang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ImageNameTextView"
+                android:layout_marginTop="60dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:text="Rp 30000" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+<Button
+    android:id="@+id/bayar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_button_login"
+    android:layout_margin="20dp"
+    android:layout_alignParentBottom="true"
+    android:text="Bayar"
+    android:textSize="22sp"
+    android:textColor="#FFF"/>
+
+</RelativeLayout>

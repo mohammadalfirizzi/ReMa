@@ -1,0 +1,152 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#3a1570"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:src="@drawable/rema"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Restriced Movement Activity Apps"
+        android:textColor="#FFF"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="serif-monospace"
+                android:text="Buat Akun"
+                android:textColor="#000"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Masukkan Username" />
+            <TextView
+                android:id="@+id/namajeniskelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="serif-monospace"
+                android:text="Pilih Zonasi"
+                android:textColor="#000"
+                android:textSize="26sp" />
+            <RadioGroup
+                android:id="@+id/kelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/kelas1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="1"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/kelas2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="2"
+                    android:textSize="20sp" />
+
+
+                <RadioButton
+                    android:id="@+id/kelas3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="3"
+                    android:textSize="20sp" />
+                <RadioButton
+                    android:id="@+id/kelas4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="4"
+                    android:textSize="20sp" />
+                <RadioButton
+                    android:id="@+id/kelas5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="5"
+                    android:textSize="20sp" />
+            </RadioGroup>
+            <EditText
+                android:inputType="numberPassword"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Masukkan Password Anda" />
+
+            <EditText
+                android:inputType="numberPassword"
+                android:id="@+id/password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Masukkan Password Anda Lagi" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_margin="20dp"
+        android:layout_below="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_insertdata"
+        android:text="Daftar Sekarang"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button_login"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

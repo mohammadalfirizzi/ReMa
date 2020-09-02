@@ -1,0 +1,166 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rincian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:text="Rincian" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#dcdddd"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardElevation="0dp"
+                android:id="@+id/kotakan2"
+                android:layout_below="@id/rincian">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/texttopup"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="ID  2103923113"/>
+                    <TextView
+                        android:id="@+id/textuang"
+                        android:textColor="#000"
+                        android:layout_margin="10dp"
+                        android:text="Rp 35.000,-"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="#f8f7f8"
+                app:cardElevation="0dp"
+                android:id="@+id/kotakan"
+                android:layout_marginBottom="20dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/kotakan2">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/mandiri"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:id="@+id/trftext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_toEndOf="@id/mandiri"
+                        android:text="Transfer Via Bank"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignStart="@+id/mandiri"
+                        android:layout_below="@+id/mandiri"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/custom_button_login"
+                        android:text="Menunggu Pembayaran"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF"
+                        android:textSize="8sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/haa"
+                android:hint="sadsdaasdsadadsdas"/>
+
+            <TextView
+                android:id="@+id/uploadstruk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/kotakan"
+                android:layout_below="@+id/kotakan"
+                android:text="Upload Struk"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_margin="20dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/img_thumb"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/uploadstruk"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/upload_struk" />
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:textColor="#FFF"
+                android:text="Upload"
+                android:layout_below="@id/img_thumb"
+                android:background="#FF68AEE7"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_tmbh"
+                android:textColor="#FFF"
+                android:text="Buka Galeri"
+                android:layout_below="@id/btn_upload"
+                android:background="#7e0816"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Batal"
+                android:textColor="#FFF"
+                android:layout_below="@id/btn_tmbh"
+                android:background="#00F"
+                android:id="@+id/btnbatal"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

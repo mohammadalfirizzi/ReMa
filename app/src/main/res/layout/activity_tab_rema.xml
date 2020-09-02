@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabRema">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iniadalah"
+        android:text="Ini adalah halaman Riwayat Transaksi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iniadalahh"
+        android:layout_below="@id/iniadalah"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Semua Jenis Transaksi yang telah dilakukan"/>
+    <TabHost
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/iniadalahh"
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:layout_width="match_parent"
+                android:id="@android:id/tabs"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent"/>
+
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

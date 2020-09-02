@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3a1570"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/gmbrkantinian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="217dp"
+        android:background="@drawable/rema"  />
+    <TextView
+        android:id="@+id/texttt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gmbrkantinian"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="0 %"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_alignLeft="@id/gmbrkantinian"
+        android:layout_height="2dp"
+        android:layout_alignStart="@+id/gmbrkantinian"
+        android:layout_below="@+id/texttt"
+        android:progressDrawable="@drawable/my_progress"
+        android:progress="50"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/memuat"
+        android:textSize="17sp"
+        android:text="Memuat Profil Anda.."
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+</RelativeLayout>

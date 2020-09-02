@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3a1570"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:src="@drawable/rema"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Restriced Movement Activity Apps"
+        android:textColor="#FFF"/>
+    <EditText
+        android:layout_toEndOf="@+id/gambaruser"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#FFF"
+        android:hint="  Username"
+        android:inputType="text"
+        android:layout_below="@id/judul"
+        android:id="@+id/username"
+        android:layout_toRightOf="@+id/gambaruser" />
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:id="@+id/gambaruser"
+        android:src="@drawable/custom_user"
+        android:layout_below="@+id/judul"/>
+    <EditText
+        android:inputType="textPassword"
+        android:layout_toEndOf="@+id/gambarpass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="#FFF"
+        android:hint="  Password"
+        android:layout_below="@id/username"
+        android:id="@+id/password"
+        android:layout_toRightOf="@+id/gambarpass" />
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:id="@+id/gambarpass"
+        android:src="@drawable/custom_pass"
+        android:layout_below="@+id/username"/>
+
+    <CheckBox
+        android:layout_marginTop="5dp"
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:buttonTint="#FFF"
+        android:textSize="16sp"
+        android:checked="false"
+        android:text="Simpan User ID"
+        android:textColor="#FFF" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button_login"
+        android:id="@+id/btnlogin"
+        android:textColor="#FFF"
+        android:text="Login" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_login"
+        android:id="@+id/btnregist"
+        android:textColor="#FFF"
+        android:text="Register" />
+
+
+</RelativeLayout>
